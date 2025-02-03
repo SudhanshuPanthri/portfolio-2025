@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from "../assets/logo.png";
+import bg1 from "../assets/bg1.png";
+import bg2 from "../assets/bg2.png";
+import bg4 from "../assets/bg4.png";
 
 const SplashScreen = () => {
     const [selectedCard, setSelectedCard] = useState(null);
@@ -8,10 +11,18 @@ const SplashScreen = () => {
 
     const handleCardClick = (name, url) => {
         setSelectedCard(name);
+        console.log(name, url, collection[name]);
         setTimeout(() => {
-            navigate(`/home`, { state: { selectedCard: name, selectedCardImage: url } });
+            navigate(`/home`, { state: { selectedCard: name, selectedCardImage: url, bigCardImage: collection[name] } });
         }, 1000);
     };
+
+    const collection = {
+        "About Me": bg1,
+        "Education": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08b4e4122035155.60d1c49fdadb5.gif",
+        "Projects": bg4,
+        "Hobbies": bg2
+    }
 
     return (
         <div className='animate-fadeIn'>
