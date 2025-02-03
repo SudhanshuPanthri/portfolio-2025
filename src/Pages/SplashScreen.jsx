@@ -19,7 +19,7 @@ const SplashScreen = () => {
 
     const collection = {
         "About Me": bg1,
-        "Education": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08b4e4122035155.60d1c49fdadb5.gif",
+        "Experience": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/08b4e4122035155.60d1c49fdadb5.gif",
         "Projects": bg4,
         "Hobbies": bg2
     }
@@ -35,7 +35,7 @@ const SplashScreen = () => {
                 </div>
                 <div className='flex gap-10 w-[100%] justify-center items-center h-[40%]'>
                     <Card name="About Me" url="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.webp" onClick={handleCardClick} selectedCard={selectedCard} />
-                    <Card name="Education" url="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-2fg93funipvqfs9i.webp" onClick={handleCardClick} selectedCard={selectedCard} />
+                    <Card name="Experience" url="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-2fg93funipvqfs9i.webp" onClick={handleCardClick} selectedCard={selectedCard} />
                     <Card name="Projects" url="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-62wgyitks6f4l79m.webp" onClick={handleCardClick} selectedCard={selectedCard} />
                     <Card name="Hobbies" url="https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-dyrp6bw6adbulg5b.webp" onClick={handleCardClick} selectedCard={selectedCard} />
                 </div>

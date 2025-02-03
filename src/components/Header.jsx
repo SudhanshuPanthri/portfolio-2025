@@ -13,7 +13,7 @@ const Header = ({ selectedCard, selectedCardImage }) => {
                 </Link>
                 {selectedCard == "About Me" && (
                     <div className='flex gap-6'>
-                        <span>Education</span>
+                        <span>Experience</span>
                         <span>Projects</span>
                         <span>Hobbies</span>
                     </div>
@@ -28,14 +28,14 @@ const Header = ({ selectedCard, selectedCardImage }) => {
                 {selectedCard == "Projects" && (
                     <div className='flex gap-6'>
                         <span>About Me</span>
-                        <span>Education</span>
+                        <span>Experience</span>
                         <span>Hobbies</span>
                     </div>
                 )}
                 {selectedCard == "Hobbies" && (
                     <div className='flex gap-6'>
                         <span>About Me</span>
-                        <span>Education</span>
+                        <span>Experience</span>
                         <span>Projects</span>
                     </div>
                 )}
